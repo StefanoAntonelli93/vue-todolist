@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+<head>
+    <title>html-css-toboolist</title>
+</head>
+<body>
+    <div id="app" v-cloak>
+     
+        <!-- HEADER -->
+        
+             <header> 
+                 <img class="logo" src="./img/logo copia.png" alt="Logo">
+                 <span class="text-title"><strong>{{ message }}</strong></span>
+             </header> 
+         
+         <!-- FINE HEADER -->
+     
+        <div class="container-nav">
+             <!-- NAV -->
+            <nav>
+                 <!-- BUTTON -->
+                 <div class="button-task">
+                    <button class="button blue"><strong>Add Task</strong></button>
+                </div>
+                <div class="button-section">
+                    <button class="white"><strong>Add Section</strong></button>
+                </div>
+                <!-- FINE BUTTON -->
+            </nav>
+            <!-- FINE NAV -->
+        </div>
+        <!-- lista item -->
+        <div class="container">
+            <ul>
+                <li>
+                    
+                    <div class="item" v-for="(item, index) in toDo">
+                        <p :class="{ strikethrough : item.done}"> 
+                            <button class="cross"> x </button> 
+                            {{ item.text }}
+                        </p>
+                        <p v-if="item.done">
+                            {{ 'fatto!' }}
+                        </p>
+                    </div>
+
+
+                </li>
+            </ul>
+        </div>
+         
+
+         
+         
+
+    </div>
+    <!-- vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- main js -->
+    <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>

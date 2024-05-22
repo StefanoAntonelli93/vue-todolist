@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk" , sans-serif;
+}
+
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+/* HEADER */
+
+header {
+    background-color: white;
+    height: 70px;
+    margin-bottom: 50px;
+
+}
+
+.logo {
+    margin-left: 10px;
+    margin-top: 15px;
+    vertical-align: middle;
+    
+    
+} 
+
+.text-title {
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+.check {
+    color: rgb(16, 155, 16);
+}
+
+.cross {
+    color: red;
+    padding: 0 10px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    
+}
+
+.container {
+    background-color: white;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 30px;
+
+}
+
+/* NAV */
+.container-nav {
+    background-color: white;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    border-radius: 5px 5px 0 0;
+}
+
+.button-task {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 30px;
+    margin-top: 5px;
+   
+}
+
+.button-section {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+   
+}
+
+.blue {
+    background-color:rgb(62, 181, 255);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(62, 181, 255)  ;
+    width: 80px;
+}
+
+.white {
+    background-color: transparent;
+    color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: lightgray;
+    width: 100px;
+    
+    
+} 
+
+/* FINE NAV */
+
+/* MAIN */
+/* UL */
+
+.button-ul {
+    display: inline-block;
+
+}
+
+.todo {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+
+}
+
+.newsletter {
+    margin-bottom: 20px;
+    
+}
+
+.summit {
+    margin-bottom: 20px;
+    
+}
+
+.item {
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    align-items: center;
+}
+
+
+/* COLOR BUTTON */
+.editorial {
+    background-color:rgb(62, 181, 255);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 60px;
+    font-size: 10px;
+}
+
+.goals {
+    background-color:rgba(137, 2, 205, 0.644);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 60px;
+    font-size: 10px;
+}
+
+.recruting {
+    background-color:rgba(24, 151, 43, 0.663);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 60px;
+    font-size: 10px;
+}
+
+.mobile {
+    background-color:rgba(255, 165, 21, 0.819);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 50px;
+    font-size: 10px;
+}
+
+.website {
+    background-color:rgba(255, 31, 87, 0.663);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 60px;
+    font-size: 10px;
+}
+
+.sales {
+    background-color:rgb(121, 207, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 50px;
+    font-size: 10px;
+}
+
+/* FINE COLOR BUTTON */
+
+
+
+/* v-cloak */
+[v-cloak] {
+    display: none;
+  }
+
+/* testo sbarrato */
+.strikethrough {
+    text-decoration: line-through;
+}
