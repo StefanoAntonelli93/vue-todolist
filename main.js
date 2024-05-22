@@ -35,7 +35,7 @@ createApp({
         },
         {
             text: 'Homepage refresh',
-            done: true,
+            done: false,
         },
         {
             text: 'Onboard new Sales team members',
@@ -48,6 +48,15 @@ createApp({
     ],
     currentIndex : 0,
     };
+  },
+//   creo metodo per cancellare toDo
+  methods: {
+    clearToDo(index) {
+        console.log('cancello toDo');
+        this.toDo.splice(index, 1);
+        this.done = 'cancellato!';
+    },
   }
+
 }).mount('#app')
 

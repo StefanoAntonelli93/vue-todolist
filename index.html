@@ -40,7 +40,7 @@
                     
                     <div class="item" v-for="(item, index) in toDo">
                         <p :class="{ strikethrough : item.done}"> 
-                            <button class="cross"> x </button> 
+                            <button class="cross" @click="clearToDo(index)"> x </button> 
                             {{ item.text }}
                         </p>
                         <p v-if="item.done">

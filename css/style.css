@@ -41,7 +41,6 @@ header {
     padding: 0 10px;
     margin-right: 10px;
     text-align: center;
-    background-color: antiquewhite;
     border-radius: 10px;
     
 }
@@ -131,7 +130,7 @@ li {
 .item {
     height: 40px;
     background-color: white;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     padding: 0 10px 0 10px;
