@@ -54,7 +54,6 @@ createApp({
     clearToDo(index) {
         console.log('cancello toDo');
         this.toDo.splice(index, 1);
-        this.done = 'cancellato!';
     },
   }
 
