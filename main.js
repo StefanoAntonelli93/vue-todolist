@@ -47,14 +47,21 @@ createApp({
         },
     ],
     currentIndex : 0,
+    inputText: 'inserisci nuovo to Do',
     };
   },
-//   creo metodo per cancellare toDo
+
   methods: {
+    //   creo metodo per cancellare toDo
     clearToDo(index) {
         console.log('cancello toDo');
         this.toDo.splice(index, 1);
     },
+    // creo metodo per cancellare testo default in input
+    clearInput() {
+        console.log('clicco su input');
+        this.inputText = '';
+    }
   }
 
 }).mount('#app')
