@@ -24,9 +24,9 @@
                  <!-- NAV -->
        
                      <!-- BUTTON -->
-                     <input type="text" class="add-to-do" v-model="inputText" @click="clearInput"><br>
+                     <input type="text" class="add-to-do" v-model="inputText" @click="clearInput()"><br>
                      <div class="button-task">
-                        <button class="button blue"><strong>Add To Do</strong></button>
+                        <button class="button blue" @click="addToDo()"><strong>Add To Do</strong></button>
                     </div>
                     
                     <!-- FINE BUTTON -->
@@ -40,7 +40,7 @@
                 <li>
                     
                     <div class="item" v-for="(item, index) in toDo">
-                        <p :class="{ strikethrough : item.done}"> 
+                        <p :class="{ strikethrough : item.done }"> 
                             <button class="cross" @click="clearToDo(index)"> x </button> 
                             {{ item.text }}
                         </p>

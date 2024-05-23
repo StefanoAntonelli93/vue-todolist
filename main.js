@@ -61,6 +61,21 @@ createApp({
     clearInput() {
         console.log('clicco su input');
         this.inputText = '';
+    },
+    // creo funzione per aggiungere nuovi toDo
+    addToDo() {
+        console.log('aggiungi toDo');
+        console.log(this.inputText);
+        // definisco variabile dove inserisco nuovo testo in input
+        const myToDo = {
+            text: this.inputText,
+            // se falso non viene sbarrato
+            done: false,
+        }
+        // pushare nuovo toDo nella lista
+        this.toDo.push(myToDo);
+        // ogni volta che si clicca bottone il campo di input si svuota
+        this.inputText = null;
     }
   }
 
